@@ -1,3 +1,4 @@
+
 header 
 {
   display: block;
@@ -7,7 +8,7 @@ header
   margin-left: -8px;
   margin-top: -8px;
   margin-bottom: 20px;
-  background-color: rgb(90, 123, 160);
+  background-color: rgb(8, 37, 71);
   border-bottom: 5px solid #3b4347;
   vertical-align:middle
 }
@@ -23,66 +24,45 @@ body
 footer 
 {
   display: block;
-  width: 928px;
+  width: 100vw;
   height: 30px;
   padding: 14px 13px 10px 19px;	
-  background-color: #86716a;
+  background-color: #1d6c80;
 }
 
+#navbar li:hover ul {
+	display: block;
+}
 
-#menu, #menu li {
+#navbar, #navbar ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#navbar li {
+	float: left;
+	position: relative;
+	height: 100%;
+}
+#navbar {
+	height: 30px;
+	background-color: #666;
+	padding-left: 25px;
+	min-width: 470px;
+}
 
-    margin: 0;
+#navbar li a {
+	display: block;
+	padding: 6px;
+	width: 100px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
 
-    padding: 0;
+#navbar li:hover { background-color: #f90; }
 
-  }
 
-  #menu {
-
-    text-align: center;
-
-    background: #03658e;
-
-  }
-
-  #menu li{
-
-    display:inline-block;
-
-    text-align: center;
-
-    width: 20%;
-
-  }
-
-  #menu a {
-
-    display: block;
-
-    padding: 5px 15px;
-
-    color: #fff;
-
-    font-size:150%;
-
-    text-decoration: none;
-
-  }
-
-  #menu a:hover {
-
-    background: #8AB8CC;
-
-  }
-
-  #menu li:nth-child (odd) {
-
-    background: #278CB7;
-
-  }
-
-tbody tr:nth-child (even) 
-{
-    background-color: #B4DAF2;
+.table-striped > tbody > tr:nth-of-type(even) {
+    background-color: #e0f0ff;    
 }
